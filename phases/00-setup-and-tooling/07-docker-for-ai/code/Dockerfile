@@ -32,7 +32,8 @@ RUN python -m pip install --no-cache-dir \
     transformers \
     datasets \
     accelerate \
-    safetensors
+    safetensors \
+    qdrant-client
 
 WORKDIR /workspace
 

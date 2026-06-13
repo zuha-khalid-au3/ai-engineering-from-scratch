@@ -3,13 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [gpu]
+    # The "deploy" and "reservations" blocks for nvidia are removed here
     volumes:
       - ../../../:/workspace
       - ~/models:/models
