@@ -33,7 +33,8 @@ RUN python -m pip install --no-cache-dir \
     datasets \
     accelerate \
     safetensors \
-    qdrant-client
+    qdrant-client \
+    flask
 
 WORKDIR /workspace
 
